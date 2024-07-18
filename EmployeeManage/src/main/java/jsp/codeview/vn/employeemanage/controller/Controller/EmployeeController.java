@@ -1,4 +1,4 @@
-package phuong.codeview.vn.employeemanage.controller;
+package jsp.codeview.vn.employeemanage.controller.Controller;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
@@ -6,8 +6,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import phuong.codeview.vn.employeemanage.entity.Employee;
-import phuong.codeview.vn.employeemanage.service.EmployeeService;
+import jsp.codeview.vn.employeemanage.controller.entity.Employee;
+import jsp.codeview.vn.employeemanage.controller.service.EmployeeService;
 
 import java.util.List;
 

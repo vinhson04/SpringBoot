@@ -1,4 +1,4 @@
-package phuong.codeview.vn.employeemanage;
+package jsp.codeview.vn.employeemanage.controller;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

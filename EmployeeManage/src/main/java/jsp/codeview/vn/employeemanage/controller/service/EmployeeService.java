@@ -1,7 +1,7 @@
-package phuong.codeview.vn.employeemanage.service;
+package jsp.codeview.vn.employeemanage.controller.service;
 
 import java.util.List;
-import phuong.codeview.vn.employeemanage.entity.Employee;
+import jsp.codeview.vn.employeemanage.controller.entity.Employee;
 
 public interface EmployeeService {
 

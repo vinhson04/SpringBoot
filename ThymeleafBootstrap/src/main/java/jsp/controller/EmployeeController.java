@@ -1,15 +1,13 @@
-package phuong.codeview.vn.thymeleafbootstrap.controller;
+package jsp.controller;
 
 import jakarta.annotation.PostConstruct;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import phuong.codeview.vn.thymeleafbootstrap.model.Employee;
+import jsp.controller.model.Employee;
 
 import java.util.ArrayList;
 import java.util.List;

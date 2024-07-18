@@ -1,4 +1,4 @@
-package phuong.codeview.vn.thymeleafbootstrap.model;
+package jsp.controller.model;
 
 public class Employee {
     private int id;

@@ -1,8 +1,8 @@
-package phuong.codeview.vn.employeemanage.dao;
+package jsp.codeview.vn.employeemanage.controller.dao;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import phuong.codeview.vn.employeemanage.entity.Employee;
+import jsp.codeview.vn.employeemanage.controller.entity.Employee;
 
 import java.util.List;
 

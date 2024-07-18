@@ -1,4 +1,4 @@
-package phuong.codeview.vn.employeemanage.entity;
+package jsp.codeview.vn.employeemanage.controller.entity;
 
 import jakarta.persistence.*;
 

@@ -1,9 +1,9 @@
-package phuong.codeview.vn.employeemanage.service;
+package jsp.codeview.vn.employeemanage.controller.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import phuong.codeview.vn.employeemanage.dao.EmployeeRepository;
-import phuong.codeview.vn.employeemanage.entity.Employee;
+import jsp.codeview.vn.employeemanage.controller.dao.EmployeeRepository;
+import jsp.codeview.vn.employeemanage.controller.entity.Employee;
 
 import java.util.List;
 import java.util.Optional;

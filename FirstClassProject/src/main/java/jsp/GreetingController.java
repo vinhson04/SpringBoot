@@ -1,4 +1,4 @@
-package phuong.codeview.vn.firstclassproject;
+package jsp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
