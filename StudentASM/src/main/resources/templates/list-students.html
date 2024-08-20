@@ -1,0 +1,72 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Student Directory</title>
+</head>
+
+<body>
+
+<div class="container">
+    <h3>Student Directory</h3>
+    <hr>
+
+    <a th:href="@{/students/add}"
+       class="btn btn-primary btn-sm mb-3"
+    >Add Student
+    </a>
+
+    <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+        <tr>
+            <th>ID</th>
+            <th>Student ID</th>
+            <th>Student Name</th>
+            <th>Subject</th>
+            <th>Credit</th>
+            <th>Score1</th>
+            <th>Score2</th>
+            <th>Action</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="tempStudent: ${students}">
+            <td th:text="${tempStudent.student_id}" />
+            <td th:text="${tempStudent.student_code}" />
+            <td th:text="${tempStudent.fullname}" />
+            <td th:text="${tempStudent.subject_name}" />
+            <td th:text="${tempStudent.credit}" />
+            <td th:text="${tempStudent.score1}" />
+            <td th:text="${tempStudent.score2}" />
+            <td>
+                <div class="row">
+                    <div class="col-small">
+                        <!-- Add "delete" button/link -->
+                        <form action="#" th:action="@{/students/showFormForUpdate}" method="POST">
+                            <input type="hidden" name="studentId" th:value="${tempStudent.student_id}" />
+                            <button type="submit" class="btn btn-info btn-sm">
+                                Update
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-small">
+                        <!-- Add "delete" button/link -->
+                        <form action="#" th:action="@{/students/delete}" method="POST">
+                            <input type="hidden" name="studentId" th:value="${tempStudent.student_id}" />
+                            <button type="submit" class="btn btn-danger btn-sm"
+                                    onclick="if (!(confirm('Are you sure you want to delete this feedback ?'))) return false;">
+                                Delete
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

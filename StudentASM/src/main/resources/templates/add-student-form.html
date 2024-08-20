@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>Save Student</title>
+</head>
+<body>
+<div class="container">
+    <hr>
+    <p class="h4 mb-4">Save Student</p>
+    <form action="#" th:action="@{/students/save}"
+          th:object="${students}" method="POST">
+        <!-- Add hidden form field to handle update -->
+        <input type="hidden" th:field="*{student_id}" />
+        <input type="text" th:field="*{student_code}"
+               class="form-control mb-4 col-4" placeholder="Student ID">
+        <input type="text" th:field="*{fullname}"
+               class="form-control mb-4 col-4" placeholder="Student Name">
+        <input type="text" th:field="*{subject_name}"
+               class="form-control mb-4 col-4" placeholder="Subject Name">
+        <input type="text" th:field="*{credit}"
+               class="form-control mb-4 col-4" placeholder="Credit">
+        <input type="text" th:field="*{score1}"
+               class="form-control mb-4 col-4" placeholder="Score 1">
+        <input type="text" th:field="*{score2}"
+               class="form-control mb-4 col-4" placeholder="Score 2">
+        <button type="submit" class="btn btn-info col-2">Save</button>
+    </form>
+    <hr>
+    <a th:href="@{/students/list}">Back to Students List</a>
+
+</div>
+</body>
+
+</html>
